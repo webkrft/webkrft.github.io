@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Webcraft Studio – Websites for Businesses</title>
+<style>
+:root{--bg:#fafaf8;--surface:#fff;--text:#16161a;--muted:#62626b;--line:#e6e6e1;--accent:#2f5bea;--accent-text:#fff;--soft:#eef2ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e11;--surface:#16161b;--text:#f2f2f4;--muted:#9a9aa5;--line:#2a2a31;--accent:#7b9bff;--accent-text:#0e0e11;--soft:#1a1d2b}}
+:root[data-theme="dark"]{--bg:#0e0e11;--surface:#16161b;--text:#f2f2f4;--muted:#9a9aa5;--line:#2a2a31;--accent:#7b9bff;--accent-text:#0e0e11;--soft:#1a1d2b}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:700;letter-spacing:-.02em;font-size:1.1rem}
+.logo span{color:var(--accent)}
+nav a.link{color:var(--muted);text-decoration:none;margin-left:22px;font-size:.92rem}
+nav a.link:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-text);padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero{padding:80px 0 70px;max-width:720px}
+.tag{display:inline-block;background:var(--soft);color:var(--accent);padding:5px 14px;border-radius:999px;font-size:.8rem;font-weight:600;margin-bottom:22px}
+h1{font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.1;letter-spacing:-.03em;margin:0 0 20px}
+.lead{color:var(--muted);font-size:1.1rem;margin:0 0 30px}
+.hero .btn{margin-right:10px;margin-bottom:10px}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);letter-spacing:-.02em;margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 36px;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card.hl{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.price{font-size:2rem;font-weight:700;letter-spacing:-.03em;margin:8px 0}
+.price small{font-size:.85rem;font-weight:500;color:var(--muted)}
+.card p{color:var(--muted);font-size:.93rem;margin:0}
+.card ul{padding:0;margin:14px 0 0;list-style:none;font-size:.9rem;color:var(--muted)}
+.card li{padding:3px 0}
+.card li::before{content:"✓ ";color:var(--accent);font-weight:700}
+.steps{counter-reset:s}
+.step{position:relative;padding-top:44px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:22px;left:26px;font-weight:700;color:var(--accent);font-size:1.3rem}
+.step{padding-top:56px}
+.note{margin-top:24px;color:var(--muted);font-size:.9rem}
+.contact{display:grid;gap:14px;max-width:520px}
+input,textarea,select{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit}
+textarea{min-height:110px;resize:vertical}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+@media(max-width:560px){nav a.link{display:none}.hero{padding:50px 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="logo">Webcraft<span>.</span></div>
+  <div><a class="link" href="#pricing">Pricing</a><a class="link" href="#process">Process</a><a class="link" href="#hosting">Hosting</a><a class="btn" style="margin-left:22px;padding:9px 18px" href="#contact">Get started</a></div>
+</nav>
+
+<header class="hero">
+  <span class="tag">Websites for small businesses</span>
+  <h1>A clean, professional website for your business — from ₹699.</h1>
+  <p class="lead">Simple, minimalist design that makes your business look credible online. You share your company details, we handle the rest — design, domain and hosting included.</p>
+  <a class="btn" href="#contact">Get a free quote</a><a class="btn ghost" href="#pricing">See pricing</a>
+</header>
+
+<section id="pricing">
+  <h2>Simple, transparent pricing</h2>
+  <p class="sub">No hidden costs. Start small and add pages or features whenever you need them.</p>
+  <div class="grid">
+    <div class="card hl"><h3>Single Page Website</h3><div class="price">₹699</div><p>A good, minimalist one-page site.</p>
+      <ul><li>Clean modern design</li><li>Mobile friendly</li><li>Your company data added</li></ul></div>
+    <div class="card"><h3>Additional Pages</h3><div class="price">₹199 <small>/ page</small></div><p>Need About, Services, Gallery or Contact pages? Add as many as you like.</p></div>
+    <div class="card"><h3>Custom Design</h3><div class="price">Custom <small>quote</small></div><p>3D elements, animations and unique designs. Price depends on your requirements.</p></div>
+    <div class="card"><h3>Database &amp; Management</h3><div class="price">₹2,000+ </div><p>Add a database and manage it — bookings, products, enquiries. Price depends on the data.</p></div>
+  </div>
+  <p class="note">Please provide your company data (logo, text, photos, contact details) so we can add it to your website.</p>
+</section>
+
+<section id="hosting">
+  <h2>Domain &amp; Hosting</h2>
+  <p class="sub">Get online without the technical hassle.</p>
+  <div class="grid">
+    <div class="card"><h3>Domain</h3><p>Buy your own domain, or let us purchase it for you on platforms like GoDaddy and set it up.</p></div>
+    <div class="card"><h3>Hosting &amp; Management</h3><div class="price">₹199 <small>/ month</small></div><p>We host and manage your website so it stays fast, secure and up to date.</p></div>
+  </div>
+</section>
+
+<section id="process">
+  <h2>How it works</h2>
+  <p class="sub">Four easy steps from idea to live website.</p>
+  <div class="grid steps">
+    <div class="card step"><h3>Tell us about you</h3><p>Share your business details, logo and content.</p></div>
+    <div class="card step"><h3>We design</h3><p>We build a clean layout and show you a preview.</p></div>
+    <div class="card step"><h3>Domain &amp; hosting</h3><p>We connect your domain and set up hosting.</p></div>
+    <div class="card step"><h3>Go live</h3><p>Your website launches, and we keep it running.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's build your website</h2>
+  <p class="sub">Send us a message and we'll get back to you with a quote.</p>
+  <div class="contact">
+    <input id="n" placeholder="Your name">
+    <input id="b" placeholder="Business name">
+    <select id="s"><option>Single page website (₹699)</option><option>Multiple pages</option><option>Custom design / 3D</option><option>Database &amp; management</option></select>
+    <textarea id="m" placeholder="Tell us about your business"></textarea>
+    <button class="btn" onclick="send()">Send enquiry</button>
+  </div>
+  <p class="note">Email: <a href="mailto:karan.n.londe@gmail.com" style="color:var(--accent)">karan.n.londe@gmail.com</a> &nbsp;·&nbsp; WhatsApp / Call: <a href="https://wa.me/919380240680" style="color:var(--accent)">+91 93802 40680</a></p>
+</section>
+
+<footer>© 2026 Webcraft Studio. All rights reserved.</footer>
+</div>
+<script>
+function send(){var v=function(i){return document.getElementById(i).value};
+var body=encodeURIComponent("Name: "+v('n')+"\nBusiness: "+v('b')+"\nService: "+v('s')+"\n\n"+v('m'));
+location.href="mailto:karan.n.londe@gmail.com?subject="+encodeURIComponent("Website enquiry")+"&body="+body}
+</script>
+</body>
+</html>
